@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 BSI Business Systems Integration AG.
+ * Copyright (c) 2021 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
  * which accompanies this distribution, and is available at
@@ -10,7 +10,7 @@
  */
 package org.eclipse.scout.widgets.client.ui.forms;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -281,7 +281,7 @@ public class ListBoxForm extends AbstractForm implements IAdvancedExampleForm {
 
         @Override
         protected Class<? extends ILookupCall<Integer>> getConfiguredLookupCall() {
-          return (Class<? extends ILookupCall<Integer>>) FontStyleLookupCall.class;
+          return FontStyleLookupCall.class;
         }
       }
 
@@ -306,7 +306,7 @@ public class ListBoxForm extends AbstractForm implements IAdvancedExampleForm {
 
         @Override
         protected Class<? extends ILookupCall<Integer>> getConfiguredLookupCall() {
-          return (Class<? extends ILookupCall<Integer>>) FontStyleLookupCall.class;
+          return FontStyleLookupCall.class;
         }
 
         @Override
@@ -345,7 +345,7 @@ public class ListBoxForm extends AbstractForm implements IAdvancedExampleForm {
 
         @Override
         protected Class<? extends ILookupCall<String>> getConfiguredLookupCall() {
-          return (Class<? extends ILookupCall<String>>) UserContentListLookupCall.class;
+          return UserContentListLookupCall.class;
         }
       }
 
@@ -508,7 +508,7 @@ public class ListBoxForm extends AbstractForm implements IAdvancedExampleForm {
 
         @Override
         protected void execChangedValue() {
-          getListBoxField().setEnabled(getValue(), true, true);
+          getListBoxField().setEnabled(getValue(), true);
         }
 
         @Override

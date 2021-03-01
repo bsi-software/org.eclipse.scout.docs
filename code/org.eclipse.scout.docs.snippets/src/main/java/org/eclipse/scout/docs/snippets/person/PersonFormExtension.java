@@ -1,3 +1,13 @@
+/*
+ * Copyright (c) 2021 BSI Business Systems Integration AG.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Distribution License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/org/documents/edl-v10.html
+ *
+ * Contributors:
+ *     BSI Business Systems Integration AG - initial API and implementation
+ */
 package org.eclipse.scout.docs.snippets.person;
 
 import org.eclipse.scout.docs.snippets.person.PersonForm.NewHandler;
@@ -19,7 +29,7 @@ public class PersonFormExtension extends AbstractFormExtension<PersonForm> {
   public void execInitForm(FormInitFormChain chain) {
     chain.execInitForm();
     // Example logic: Access the form, disable field
-    getOwner().getNameField().setEnabled(false, true, true);
+    getOwner().getNameField().setEnabled(false);
   }
 
   public void testMethod() {

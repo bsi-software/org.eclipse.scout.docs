@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 BSI Business Systems Integration AG.
+ * Copyright (c) 2021 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
  * which accompanies this distribution, and is available at
@@ -500,7 +500,7 @@ public class MessageBoxForm extends AbstractForm implements IPageForm {
 
         // Prevent opening message boxes that cannot be closed again
         boolean messageBoxClosable = (yesButtonText != null || noButtonText != null || cancelButtonText != null || autoCloseMillis != -1);
-        getMessageBoxConfiguredButton().setEnabled(messageBoxClosable, true, true);
+        getMessageBoxConfiguredButton().setEnabled(messageBoxClosable, true);
       }
 
       @Order(10)
@@ -573,7 +573,7 @@ public class MessageBoxForm extends AbstractForm implements IPageForm {
 
         @Override
         protected Class<? extends ILookupCall<Integer>> getConfiguredLookupCall() {
-          return (Class<? extends ILookupCall<Integer>>) AnswerOptionsLookupCall.class;
+          return AnswerOptionsLookupCall.class;
         }
       }
 
@@ -758,7 +758,7 @@ public class MessageBoxForm extends AbstractForm implements IPageForm {
 
         @Override
         protected Class<? extends ILookupCall<String>> getConfiguredLookupCall() {
-          return (Class<? extends ILookupCall<String>>) IconIdLookupCall.class;
+          return IconIdLookupCall.class;
         }
       }
 
@@ -778,7 +778,7 @@ public class MessageBoxForm extends AbstractForm implements IPageForm {
 
         @Override
         protected Class<? extends ILookupCall<Integer>> getConfiguredLookupCall() {
-          return (Class<? extends ILookupCall<Integer>>) AnswerOptionsLookupCall.class;
+          return AnswerOptionsLookupCall.class;
         }
       }
 

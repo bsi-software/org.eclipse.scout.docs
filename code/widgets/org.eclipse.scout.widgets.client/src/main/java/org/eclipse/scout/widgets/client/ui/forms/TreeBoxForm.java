@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 BSI Business Systems Integration AG.
+ * Copyright (c) 2021 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
  * which accompanies this distribution, and is available at
@@ -580,7 +580,7 @@ public class TreeBoxForm extends AbstractForm implements IAdvancedExampleForm {
 
         @Override
         protected void execChangedValue() {
-          getTreeBoxField().setEnabled(getValue(), true, true);
+          getTreeBoxField().setEnabled(getValue(), true);
         }
 
         @Override

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 BSI Business Systems Integration AG.
+ * Copyright (c) 2021 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
  * which accompanies this distribution, and is available at
@@ -306,8 +306,8 @@ public class FormForm extends AbstractForm implements IPageForm {
           protected void execChangedValue() {
             DisplayHint displayHint = (getValue() != null ? getValue() : DisplayHint.Dialog);
             getOpenFormButton().setLabel("Open " + displayHint.name());
-            getDisplayViewIdField().setEnabled(displayHint == DisplayHint.View, true, true);
-            getFormTitleField().setEnabled(ObjectUtility.isOneOf(displayHint, DisplayHint.Dialog, DisplayHint.View, DisplayHint.PopupWindow), true, true);
+            getDisplayViewIdField().setEnabled(displayHint == DisplayHint.View, true);
+            getFormTitleField().setEnabled(ObjectUtility.isOneOf(displayHint, DisplayHint.Dialog, DisplayHint.View, DisplayHint.PopupWindow), true);
           }
         }
 

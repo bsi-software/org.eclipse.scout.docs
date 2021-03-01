@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 BSI Business Systems Integration AG.
+ * Copyright (c) 2021 BSI Business Systems Integration AG.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Distribution License v1.0
  * which accompanies this distribution, and is available at
@@ -300,9 +300,9 @@ public class SplitBoxForm extends AbstractForm implements IPageForm {
 
             @Override
             protected void execInitField() {
-              getNameField().setEnabled(false, true, true);
-              getSizeField().setEnabled(false, true, true);
-              getModifiedField().setEnabled(false, true, true);
+              getNameField().setEnabled(false);
+              getSizeField().setEnabled(false);
+              getModifiedField().setEnabled(false);
             }
 
             @Order(10)
